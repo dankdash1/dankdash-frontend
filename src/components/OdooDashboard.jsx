@@ -25,7 +25,6 @@ const OdooDashboard = () => {
     { name: 'AI Social', icon: '🤖', path: '/admin/automated-social-media', category: 'Marketing' },
     { name: 'Marketing', icon: '🤖', path: '/admin/marketing-automation', category: 'Marketing' },
     { name: 'Email Mktg', icon: '📧', path: '/admin/email-marketing', category: 'Marketing' },
-    { name: 'Gmail & Inbox AI', icon: '📬', path: '/admin/email-accounts', category: 'Communication' },
     { name: 'SMS Mktg', icon: '📱', path: '/admin/sms-marketing', category: 'Marketing' },
     { name: 'Survey', icon: '📋', path: '/admin/survey', category: 'Analytics' },
     { name: 'Purchase', icon: '📦', path: '/admin/purchase', category: 'Operations' },
@@ -63,7 +62,8 @@ const OdooDashboard = () => {
     { name: 'Apps', icon: '📱', path: '/admin/apps', category: 'Administration' },
     { name: 'Settings', icon: '⚙️', path: '/admin/settings', category: 'Administration' },
     { name: 'System Config', icon: '🔧', path: '/admin/comprehensive-settings', category: 'Administration' },
-    { name: 'Voice AI', icon: '🎙️', path: '/admin/voice-ai', category: 'AI' }
+    { name: 'Voice AI', icon: '🎙️', path: '/admin/voice-ai', category: 'AI' },
+    { name: 'Gmail & Inbox AI', icon: '📬', path: '/admin/email-accounts', category: 'Communication' }
   ];
 
   const clearSearch = () => {
@@ -135,7 +135,7 @@ const OdooDashboard = () => {
           // Show all modules in a responsive grid
           // Mobile: 3 cols, Small: 4 cols, Medium: 6 cols, Large: 8 cols, XL: 10 cols
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4 max-w-7xl mx-auto">
-            {modules.slice(0, 60).map((module) => (
+            {modules.map((module) => (
               <Link
                 key={module.name}
                 to={module.path}
