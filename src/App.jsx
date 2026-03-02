@@ -29,6 +29,7 @@ import EmployeesModule from './components/EmployeesModule';
 import EnhancedEmployeesModule from './components/EnhancedEmployeesModule';
 import EmailMarketingModule from './components/EmailMarketingModule';
 import EnhancedEmailMarketingModule from './components/EnhancedEmailMarketingModule';
+import EmailAccountsModule from './components/EmailAccountsModule';
 import SMSMarketingModule from './components/SMSMarketingModule';
 import EnhancedSMSMarketingModule from './components/EnhancedSMSMarketingModule';
 import SurveyModule from './components/SurveyModule';
@@ -788,6 +789,7 @@ function App() {
             <Route path="/admin/purchase" element={<EnhancedPurchaseModule />} />
             <Route path="/admin/employees" element={<EnhancedEmployeesModule />} />
             <Route path="/admin/email-marketing" element={<EnhancedEmailMarketingModule />} />
+            <Route path="/admin/email-accounts" element={<EmailAccountsModule />} />
             <Route path="/admin/sms-marketing" element={<EnhancedSMSMarketingModule />} />
             <Route path="/admin/survey" element={<EnhancedSurveyModule />} />
             <Route path="/admin/documents" element={<EnhancedDocumentManagementModule />} />

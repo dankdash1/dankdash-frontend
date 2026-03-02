@@ -25,6 +25,7 @@ const OdooDashboard = () => {
     { name: 'AI Social', icon: '🤖', path: '/admin/automated-social-media', category: 'Marketing' },
     { name: 'Marketing', icon: '🤖', path: '/admin/marketing-automation', category: 'Marketing' },
     { name: 'Email Mktg', icon: '📧', path: '/admin/email-marketing', category: 'Marketing' },
+    { name: 'Gmail & Inbox AI', icon: '📬', path: '/admin/email-accounts', category: 'Communication' },
     { name: 'SMS Mktg', icon: '📱', path: '/admin/sms-marketing', category: 'Marketing' },
     { name: 'Survey', icon: '📋', path: '/admin/survey', category: 'Analytics' },
     { name: 'Purchase', icon: '📦', path: '/admin/purchase', category: 'Operations' },
